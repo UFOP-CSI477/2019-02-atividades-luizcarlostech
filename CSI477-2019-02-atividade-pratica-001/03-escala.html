@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+	<title>Calculadora Escala Richter</title>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+
+	<div class="jumbotron text-center" style="background-color:#000033">
+		<h1 style=color:white>Seja bem-vindo(a) ao Calculo de Escala Richter</h1> <br>
+		<img class="displayed" width="1000px" height="400" src="./escalarichter.jpeg">
+				<p style=color:white>Calculadora dos Efeitos dos Terremotos</p>
+	</div>
+
+	<div class="p-3 mb-2 text-white container bg-light mt-4">
+		<form name="Escala">
+							<label for="Amplitude" style=color:black>Digite a Amplitude do Terremoto:</label>
+	       			<input type="number" name="Amplitude" id="Amplitude" class="form-control" placeholder="Amplitude em mm.">
+
+
+							<br>
+
+									<label for="Amplitude" style=color:black>Tempo entre a onda superficial e a onda de pressão máxima:</label>
+										<input type="number" name="Delta" id="Delta" class="form-control" placeholder="Em segundos">
+
+
+							<br>
+
+							<div class=".col-auto">
+	       			<button type="button" style = "background-color:#000033" onclick="calcular()" class="btn btn-success">Calcular</button>
+	       			</div>
+			</div>
+		</form>
+
+		<div style="display:none" id="divResultado">
+			<br>
+			<form name="Resposta">
+				<div class="form-row">
+					<div class="col">
+						<input type="text" id="EscalaResp" name="EscalaResp" class="form-control" disabled>
+					</div>
+					<div class=".col-auto">
+						<input type="text" id="EscalaDadosAmplitude" name="EscalaDadosAmplitude" class="form-control" style="text-align:center" disabled>
+					</div>
+					<div class=".col-auto">
+						<input type="text" id="EscalaDadosDelta" name="EscalaDadosDelta" class="form-control" style="text-align:center" disabled>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+		<div style="display:none" id="divTableEscala">
+			<br>
+			<table class="table table-striped table-bordered table-hover table-sm" id="TableEscala">
+	  		<thead class="thead-dark">
+	    		<tr>
+	      			<th scope="col" style = "background-color:#000033">Magnitude Richter</th>
+	      			<th scope="col" style = "background-color:#000033">Efeitos</th>
+	    		</tr>
+	  		</thead>
+	  		<tbody>
+	  			<tr>
+	  				<td>Menor que 3,5</th>
+	  				<td>Geralmente não sentido, mas gravado
+	  			</tr>
+	  			<tr>
+	  				<td>Entre 3,5 e 5,4</th>
+	  				<td>Às vezes sentido, mas raramente causa danos</th>
+	  			</tr>
+	  			<tr>
+	  				<td>Entre 5,5 e 6,0</th>
+	  				<td>No máximo causa pequenos danos a prédios bem construídos, mas pode danificar seriamente casas mal construídas em regiões próximas</th>
+	  			</tr>
+	  			<tr>
+	  				<td>Entre 6,1 e 6,9</th>
+	  				<td>Pode ser destrutivo em áreas em torno de até 100km do epicentro</th>
+	  			</tr>
+	  			<tr>
+	  				<td>Entre 7,0 e 7,9</th>
+	  				<td>Gande terremoto. Pode causar sérios danos numa grande faixa</th>
+	  			</tr>
+	  			<tr>
+	  				<td>8,0 ou mais</th>
+	  				<td>Enorme terremoto. Pode causar graves danos em muitas áreas mesmo que estejam a centenas de quilômetros</th>
+	  			</tr>
+	    	</tbody>
+	    </table>
+		</div>
+	</div>
+
+	<footer class="text-center">
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-0">
+					</div>
+					<div class="footer-col col-md-4"> </div>
+					<div class="footer-col col-md-4">
+						Calcule os efeitos dos terremotos!
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="03-escala.js"></script>
+</body>
+</html>

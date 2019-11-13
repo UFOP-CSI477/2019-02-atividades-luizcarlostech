@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+			<title>Rolimã Racer - Competição de Carrinho de Rolimã</title>
+				<link rel="stylesheet" href="./css/bootstrap.css">
+	</head>
+
+	<body>
+
+		<div class="jumbotron text-center">
+      <h1>Seja bem-vindo(a) ao Rolimã Racer</h1> <br>
+      <p>Competição de Carrinho de Rolimã</p>
+    </div>
+
+		<form name="Competidor" method="post" class="jumbotron">
+
+			<div class="col">
+       <label for="">Competidor:</label>
+       <input type="text" name="nome" id="nome" placeholder="Insira o Nome">
+			 </div>
+
+       <br>
+
+			 <div class="col">
+      <label for="group">Posição de largada:</label>
+
+			<input type="checkbox" id="tempo" name="area[1]">
+			<label for="tempo">1</label>
+
+			<input type="checkbox" id="tempo" name="area[2]">
+			<label for="tempo">2</label>
+
+			<input type="checkbox" id="tempo" name="area[3]">
+			<label for="tempo">3</label>
+
+			<input type="checkbox" id="tempo" name="area[4]">
+			<label for="tempo">4</label>
+
+			<input type="checkbox" id="tempo" name="area[5]">
+			<label for="tempo">5</label>
+
+			<input type="checkbox" id="tempo" name="area[6]">
+			<label for="tempo">6</label>
+		</div>
+       <br>
+
+			 <div class="col">
+       <label for="">Tempo:</label>
+       <input type="tempo" name="tempo" id="tempo" placeholder="Em segundos">
+		 </div>
+
+			 <div class=".col-auto">
+				 <button type="button" onclick="adicionar()" class="btn btn-success">Adicionar</button>
+			 </div>
+
+
+			 	<small id="InsertHelpBlock" class="form-text text-muted">
+		 			A corrida comporta até 6 jogadores ao mesmo tempo!
+				</small>
+
+
+			<table class="table table-striped table-bordered table-hover table-sm table-responsive-sm" id="Resultado">
+				<thead class="thead-dark">
+					<tr>
+							<th scope="col">Posição</th>
+							<th>Largada</th>
+							<th>Competidor(a)</th>
+							<th>Tempo(s)</th>
+							<th>Resultado</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+
+			</form>
+
+
+
+				      <footer class="text-center">
+				        <div class="footer-below">
+				          <div class="container">
+				            <div class="row">
+				              <div class="footer-col col-md-0">
+				              </div>
+				              <div class="footer-col col-md-4"> </div>
+				              <div class="footer-col col-md-4">
+				                Venha Participar Dessa Corrida!
+				                <br>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </footer>
+					</body>
+
+				</html>

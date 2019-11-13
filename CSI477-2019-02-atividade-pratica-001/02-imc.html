@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+			<title>Calculo de IMC</title>
+				<link rel="stylesheet" href="./css/bootstrap.css">
+	</head>
+
+	<body>
+
+		<div class="jumbotron text-center" style="background-color:#000033">
+				<h1 style=color:white>Seja bem-vindo(a) ao Calculo de IMC</h1> <br>
+			<img class="displayed" width="1000px" height="400" src="./imc.jpg">
+					<p style=color:white>Calculadora de IMC</p>
+		</div>
+
+	<div class="p-3 mb-2 text-white container bg-light mt-4">
+			<form name="IMC">
+
+				<label for="nome" style=color:black>Nome:</label>
+				<input type="text" name="Nome" id="Nome" class="form-control">
+
+
+				 <br>
+
+				 <label for="altura" style=color:black>Altura:</label>
+				 <input type="number" name="Partida" class="form-control" id="Altura">
+
+					 <br>
+
+
+					 <label for="peso" style=color:black>Peso:</label>
+					<input type="number" name="Tempo" class="form-control" id="Peso">
+
+
+
+						 <br>
+						 <div class=".col-auto">
+							 <button type="button" style = "background-color:#000033" onclick="calcular()" class="btn btn-success">Calcular</button>
+						 </div>
+
+		</form>
+
+		<div style="display:none" id="divResultado">
+			<br>
+			<form name="Resposta">
+				<div class="form-row">
+					<div class="col">
+						<input type="text" id="ImcResp" name="ImcResp" class="form-control" disabled>
+						<br>
+					</div>
+					<div class=".col-auto">
+						<input type="text" id="ImcDadosPeso" class="form-control" name="ImcDados" disabled style="text-align: center">
+					</div>
+					<div class=".col-auto">
+						<input type="text" id="ImcDadosAltura" class="form-control" name="ImcDados" disabled style="text-align: center">
+					</div>
+				</div>
+
+				<input class="form-control" id="IdealResp" type="text" disabled>
+				<br>
+				<small id="InsertHelpBlock" class="form-text text-muted">Com base na classificação do IMC para adultos.
+				</small>
+			</form>
+		</div>
+
+		<div style="display:none" id="divTableIMC">
+			<br>
+			<table class="table table-striped table-bordered table-hover table-sm" id="TableIMC">
+	  		<thead class="thead-dark">
+	    		<tr>
+	      			<th scope="col">IMC</th>
+	      			<th scope="col">Classificação</th>
+	    		</tr>
+	  		</thead>
+	  		<tbody>
+	  			<tr>
+	  				<td>Abaixo de 18,5</td>
+	  				<td>Subnutrição</td>
+	  			</tr>
+	  			<tr>
+	  				<td>Entre 18,5 e 24,9</td>
+	  				<td>Peso Saudável</td>
+	  			</tr>
+	  			<tr>
+	  				<td>Entre 25,0 e 29,9</td>
+	  				<td>Sobrepeso</td>
+	  			</tr>
+	  			<tr>
+	  				<td>Entre 30,0 e 34,9</td>
+	  				<td>Obesidade grau 1</td>
+	  			</tr>
+	  			<tr>
+	  				<td>Entre 35,0 e 39,9</td>
+	  				<td>Obesidade grau 2</td>
+	  			</tr>
+	  			<tr>
+	  				<td>Acima de 40</td>
+	  				<td>Obesidade grau 3</td>
+	  			</tr>
+	    	</tbody>
+	    	</table>
+		</div>
+	</div>
+	<footer class="text-center">
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-0">
+					</div>
+					<div class="footer-col col-md-4"> </div>
+					<div class="footer-col col-md-4">
+						Conheça já, seu índice de massa corporal!
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="02-imc.js"></script>
+</body>
+</html>

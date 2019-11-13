@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+			<title>Rolimã Racer - Competição de Carrinho de Rolimã</title>
+				<link rel="stylesheet" href="./css/bootstrap.css">
+	</head>
+
+	<body>
+
+		<div class="jumbotron text-center" style="background-color:#000033">
+			<h1 style=color:white>Seja bem-vindo(a) ao Rolimã Racer</h1> <br>
+			<img class="displayed" width="1000px" height="400" src="./carrinho-rolima.jpg">
+      <p style=color:white>Competição de Carrinho de Rolimã</p>
+    </div>
+
+		<div class="p-3 mb-2 text-white container bg-light mt-4">
+
+			<form name="Competidor">
+
+					 <label for="nome" style=color:black>Nome:</label>
+					 <input type="text" name="Nome" id="Nome" class="form-control" placeholder="Competidor">
+
+
+						<br>
+
+						<label for="posição" style=color:black>Posição:</label>
+						<div class = "form-group">
+						<select required id="Partida" class="custom-select">
+    				<!-- <option value="" disabled>Escolha</option> -->
+    				<option selected value="1">1</option>
+    				<option value="2">2</option>
+						<option value="3">3</option>
+    				<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						</select>
+						</div>
+
+
+							<br>
+
+							<label for="tempo" style=color:black>Tempo:</label>
+				     <input type="number" name="Tempo" class="form-control" id="Tempo" placeholder="Em segundos">
+
+
+
+								<br>
+								<div class=".col-auto">
+			       			<button type="button" style = "background-color:#000033" onclick="adicionar()" class="btn btn-success">Adicionar</button>
+			       		</div>
+
+			</form>
+
+
+
+
+		    <div id="divTable" style="display: none">
+		    	<br>
+
+		    	<table class="table table-striped table-bordered table-hover table-sm table-responsive-sm" id="Resultado">
+		  			<thead class="thead-dark">
+			    		<tr>
+		      				<th scope="col" style="background-color:#000033">Posição</th>
+		      				<th style="background-color:#000033">Partida</th>
+		      				<th style="background-color:#000033">Competidor(a)</th>
+		      				<th style="background-color:#000033">Tempo</th>
+		      				<th style="background-color:#000033">Resultado</th>
+		    			</tr>
+		  			</thead>
+		  			<tbody>
+		    		</tbody>
+		    	</table>
+		    </div>
+
+		</div>
+
+		<footer class="text-center">
+			<div class="footer-below">
+				<div class="container">
+					<div class="row">
+						<div class="footer-col col-md-0">
+						</div>
+						<div class="footer-col col-md-4"> </div>
+						<div class="footer-col col-md-4">
+							Venha Participar Dessa Corrida!
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="01-corrida.js"></script>
+
+
+
+
+
+	</body>
+	</html>
