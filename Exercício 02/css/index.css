@@ -1,0 +1,28 @@
+h1{
+  font-family: Gill Sans;
+  text-align: center;
+  color:grey;
+}
+h2{
+  color: black;
+  font-family: Courier New;
+}
+a{
+  font-size: 12pt;
+  margin: 20px;
+  text-decoration: underline;
+  color: blue;
+  font-family: Apple Chancery;
+}
+a:hover {
+  color: black;
+}
+div{
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  border-radius: 5px;
+  margin: 0px 25px; 
+}
+body{
+  
+}

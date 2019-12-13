@@ -1,0 +1,32 @@
+h1{
+  font-family: Gill Sans;
+  text-align: center;
+  color:grey;
+}
+
+input[type=text],[type=number]{
+  width: 78%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+label {
+  padding: 5px 5px 5px 0;
+}
+
+select {
+  width: 83%;
+  padding: 5px 5px;
+  margin: 0px 0;
+  border: none;
+  background-color: lightgray;
+}
+
+input[type=button], input[type=submit], input[type=text] {
+  border: none;
+  padding: 16px 32px;
+  text-decoration: none;
+  background-color: lightgray;
+  margin: 4px 4px 0px 4;
+}

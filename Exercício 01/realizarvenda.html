@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Vendas</title>
+  </head>
+
+  <body>
+  	<h1> Vender smartphone</h1>
+
+  	<ul type="circle">
+    	<li><a href="index.html">Tela Inicial</a></li>
+    </ul>
+
+    <form method="post">
+		<label for="Produto"></label>
+		<select>name="Produto"
+			<option value="0">Smartphone:</option>
+			<option value="1">Samsung Galaxy Note 10+</option>
+			<option value="2">Samsung Galaxy S10+</option>
+			<option value="3">IPhone 11 Pro Max</option>
+			<option value="4">Huawei P30 Pro</option>
+			<option value="5">Google Pixel 4 XL</option>
+		</select>
+
+		<br><br>
+
+		<label> Forma de Pagamento:</label><br>
+			<label for="dinheiro">Em dinheiro</label>
+			<input type="radio" name="formaDePagamento" id="dinheiro">
+
+			<label for="Cartao">Cartão</label>
+			<input type="radio" name="formaDePagamento" id="Cartao">
+
+			<label for="Boleto Bancario">Boleto Bancário</label>
+			<input type="radio" name="formaDePagamento" id="Boleto Bancario">
+
+		<br><br>
+
+		<label for="cliente"> Cliente </label>
+		<input type="text" name="cliente" id ="cliente" placeholder="Cliente X"><br>
+
+		<br>
+		<input type="submit" name="Comprar" value="Comprar">
+
+	</form>
+
+  </body>
+</html>

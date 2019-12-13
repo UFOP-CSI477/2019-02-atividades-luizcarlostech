@@ -1,0 +1,36 @@
+h1{
+  font-family: Gill Sans;
+  text-align: center;
+  color:grey;
+}
+
+table{
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  margin:auto;
+}
+
+th, td{
+  padding: 4px;
+  font-family: Courier New;
+}
+
+thead tr{
+  background-color: gray; 
+}
+
+thead tr:hover{
+  background-color: lightblue;
+}
+
+tbody tr:hover{
+  background-color: lightblue;
+}
+
+tbody tr:nth-child(odd){
+  background-color: lightgrey;
+}
