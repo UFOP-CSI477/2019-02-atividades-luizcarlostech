@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a href="index.html" class="navbar-brand">Loja de smartphones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu2">
+        <ul class="navbar-nav mr-auto mt-2">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Smartphones</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="listarprodutos.html">Listar</a>
+              <a class="dropdown-item" href="cadastroprodutos.html">Cadastro</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Clientes</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="listarclientes.html">Listar</a>
+              <a class="dropdown-item" href="realizarvenda.html">Vender</a>
+              <a class="dropdown-item" href="cadastroclientes.html">Casdastrar Cliente</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      
+      <table class="table table-light table-striped table-hover">
+        <thead  class="thead-light">
+          <tr> <!-- linha -->
+              <th> Smartphone </th>
+              <th> Descrição </th>
+              <th> Preço </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img src="imagens/Note10.jpg" width="300"></td>
+            <td>Samsung Galaxy Note 10+ com sua marca registrada a "Spen", conta com 12gb de ram, 256gb de armazenamento interno, display de 6.8"</td>
+            <td>R$ 5999,00 em até 10x sem juros no cartão de crédito
+              R$5599,00 no boleto bancário</td>
+          </tr>
+
+          <tr>
+            <td><img src="imagens/s10.jpg" width="300"></td>
+            <td>Samsung Galaxy S10+ a nova geração da linha S, conta com um display de 6.4", 8gb de ram, 128gb de armazenamento interno</td>
+            <td>R$ 3999,00 em até 10x sem juros no cartão de crédito
+              R$3599,00 no boleto bancário</td>
+          </tr>
+
+          <tr>
+            <td><img src="imagens/iphone.jpg" width="300"></td>
+            <td>IPhone 11 Pro Max os novos iPhones agora com um sistema triplo de cameras traseiras, 64gb de armazenamento interno e um display de 6.5"</td>
+            <td>R$ 6999,00 em até 10x sem juros no cartão de crédito
+              R$5599,00 no boleto bancário</td>
+          </tr>
+
+          <tr>
+            <td><img src="imagens/p30.jpg" width="300"></td>
+            <td>Huawei P30 Pro, agora no Brasil, conta com um impressionante zoom de 50x, uma bela tela de 6.5" e armazenamento interno de 128gb </td>
+            <td>R$ 4499,00 em até 10x sem juros no cartão de crédito
+              R$4100,00 no boleto bancário</td>
+          </tr>
+
+          <tr>
+            <td><img src="imagens/pixel4.jpg" width="300"></td>
+            <td>Google Pixel 4 XL os novos aparelhos da google, novamente vem com belissimas cameras e um design elegante e moderno</td>
+            <td>R$ 4299,00 em até 12x sem juros no cartão de crédito
+              R$3899,00 no boleto bancário</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>

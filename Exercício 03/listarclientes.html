@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Loja Smartphones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a href="index.html" class="navbar-brand">Loja de smartphones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu2">
+        <ul class="navbar-nav mr-auto mt-2">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Smartphones</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="listarprodutos.html">Listar</a>
+              <a class="dropdown-item" href="cadastroprodutos.html">Cadastro</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Clientes</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="listarclientes.html">Listar</a>
+              <a class="dropdown-item" href="realizarvenda.html">Vender</a>
+              <a class="dropdown-item" href="cadastroclientes.html">Casdastrar Cliente</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+    <table class="table table-light table-striped table-hover">
+            <thead  class="thead-light">
+           <tr> <!-- linha -->
+            <th> Nome Cliente </th>
+            <th> CPF </th>
+            <th> Email </th>
+            <th> Telefone </th>
+            <th> Endereço </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Luiz Carlos</td>
+          <td>104.751.614.72</td>
+          <td>luiz@gmail.com</td>
+          <td>(31)975101596</td>
+          <td>R.Andrade, 712, Vale do Sol, João Monlevade, MG</td>
+        </tr>
+
+        <tr>
+          <td>Bruna Romanhol</td>
+          <td>105.845.135.71</td>
+          <td>bruna@gmail.com</td>
+          <td>(31)997463982</td>
+          <td>R.São Bento, 195, Gonsalves Dias, Rio de Janeiro, RJ</td>
+        </tr>
+
+        <tr>
+          <td>Pedro Santana</td>
+          <td>105.321.765.75</td>
+          <td>pedro@gmail.com</td>
+          <td>(31)994151645</td>
+          <td>R.Carvalho, 456, Vila Tanque, São Paulo, SP</td>
+        </tr>
+
+        <tr>
+          <td>Marcos Vidal</td>
+          <td>103.951.524.74</td>
+          <td>marcos@gmail.com</td>
+          <td>(31)996482873</td>
+          <td>R.Etelvino, 32, Augusta, São Gonsalo, MG</td>
+        </tr>
+
+        <tr>
+          <td>Ilan Silva</td>
+          <td>105.513.285.73</td>
+          <td>ilan@gmail.com</td>
+          <td>(31)996471954</td>
+          <td>R.Getulio, 237, Praiana, Vitória, ES</td>
+      </tbody>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

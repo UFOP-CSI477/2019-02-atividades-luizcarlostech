@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastrar Produto</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+  	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a href="index.html" class="navbar-brand">Loja de smartphones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu2">
+        <ul class="navbar-nav mr-auto mt-2">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Smartphones</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="listarprodutos.html">Listar</a>
+              <a class="dropdown-item" href="cadastroprodutos.html">Cadastro</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Clientes</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="listarclientes.html">Listar</a>
+              <a class="dropdown-item" href="realizarvenda.html">Vender</a>
+              <a class="dropdown-item" href="cadastroclientes.html">Casdastrar Cliente</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-4 mb-4">
+		<form method="post">
+			<div class="form-group">
+				<label for="nome"> Modelo do smartphone</label><br>
+				<input class="form-control" type="text" name="nome" id ="nome" placeholder="Nome">
+			</div>
+			
+			<div class="form-row">
+			    <div class="col form-group">
+					<label for="peso"> Peso</label><br>
+					<input class="form-control" type="number" name="peso" id ="peso" placeholder="peso">
+			    </div>
+			    <div class="col form-group">
+					<label for="peso"> Unidade de medida</label><br>
+					<input class="form-control" type="text" name="unidadedemedida" id ="unidadedemedida" placeholder="unidade de medida">
+			    </div>
+			</div>
+			
+			<div class="form-group">
+				<label for="preco"> Preço</label><br>
+				<input class="form-control" type="text" name="nome" id ="preco" placeholder="R$9.999,99"> 
+			</div>
+			
+			<div class="form-group">
+				<label for="descricao"> Descrição</label><br>
+				<input class="form-control" type="text" name="Descricao" id ="descricao" placeholder="Descriçao do produto">
+			</div>
+
+			<div class="form-group">
+				<label for="estoque"> Estoque</label><br>
+				<input class="form-control" type="number" name="estoque" id ="estoque" placeholder="Estoque">
+			</div>
+			
+			<div class="form-group">
+				<label for="estoque"> Mercado alvo</label><br>
+				<select class="form-control" name="Produto">
+					<option value="0">Mercado Interno</option>
+					<option value="1">Mercado Externo</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="estoque"> Fornecedor</label><br>
+				<select class="form-control" name="Fornecedor">
+					<option value="1">Samsung</option>
+					<option value="2">Apple</option>
+					<option value="3">Huawei</option>
+					<option value="4">Google</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<input class="btn btn-primary" type="submit" name="Enviar" value="Cadastrar">
+			</div>
+		</form>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
